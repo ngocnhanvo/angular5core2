@@ -3,6 +3,10 @@ import { Component } from '@angular/core';
     selector: 'home',
     templateUrl: './home.component.html',
     styleUrls: [
+        '../../../assets/fontgg/fontgg.css',
+        '../../../assets/global/plugins/font-awesome/css/font-awesome.min.css',
+        '../../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css',
+        '../../../assets/global/plugins/bootstrap/css/bootstrap.min.css', 
         '../../../assets/global/plugins/uniform/css/uniform.default.css',
         '../../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
 
@@ -16,4 +20,4 @@ import { Component } from '@angular/core';
 
 })
 export class HomeComponent {
-}
+} 
