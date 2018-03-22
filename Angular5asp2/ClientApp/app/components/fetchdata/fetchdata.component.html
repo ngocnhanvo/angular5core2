@@ -1,0 +1,24 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table' *ngIf="forecasts">
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.usercode }}</td>
+            <td>{{ forecast.username }}</td>
+            <td>{{ forecast.birthday }}</td>
+            <td>{{ forecast.gender }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,24 @@
+<h1>Add User</h1>
+<table class='table'>
+    <tbody>
+        <tr>
+            <td>Code</td>
+            <td><input type="text" [(ngModel)]="code_user"/></td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td><input type="text" [(ngModel)]="name_user"/></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="button" value="Add User" (click)="addUser()"/></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>{{mess_user}}</td>
+        </tr>
+    </tbody>
+</table>

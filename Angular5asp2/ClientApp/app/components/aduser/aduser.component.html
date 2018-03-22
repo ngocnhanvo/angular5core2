@@ -1,0 +1,31 @@
+<h1>User List</h1>
+
+<div class="button">
+    <a [routerLink]="['/aduser_add']">Thêm</a>
+</div>
+
+<p *ngIf="!forecasts"><em>Loading...</em></p>
+
+<table class='table' *ngIf="forecasts">
+    <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Gender</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let forecast of forecasts">
+            <td>{{ forecast.usercode }}</td>
+            <td>{{ forecast.username }}</td>
+            <td>{{ forecast.birthday }}</td>
+            <td>{{ forecast.gender }}</td>
+            <td>
+                <div class="button">Sửa</div>
+                <div class="button">Xóa</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
